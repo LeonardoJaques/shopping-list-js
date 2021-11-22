@@ -1,0 +1,77 @@
+<html>
+
+  <head>
+    <title>
+      Shopping List
+    </title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <!-- section 1 -->
+    <div id="wrapper">
+      <header>
+        <div id="page-top">
+          <h1 class="title">Shopaholic</h1>
+          <p>My shopping list </p>
+          <!-- search and show/hide functionality  -->
+          <form id="search-item">
+            <input type="text" placeholder="search Items...">
+            <div id="check">
+              <label for="hide">Hide List</label>
+              <input type="checkbox" id="hide">
+            </div>
+          </form>
+        </div>
+      </header>
+      <!-- section 2 -->
+      <form id="add-item">
+        <input type="text" placeholder="What do you want to buy?">
+        <button>Add</button>
+      </form>
+      <!-- section 3 -->
+      <div id="grocery-list">
+        <h2 class="title">Items to buy </h2>
+        <ul>
+          <li>
+            <span class="item">Milk</span>
+            <span class="delete">delete</span>
+          </li>
+          <li>
+            <span class="item">Sugar and Spice</span>
+            <span class="delete">delete</span>
+          </li>
+          <li>
+            <span class="item">Something to drink (e.g.coke)</span>
+            <span class="delete">delete</span>
+          </li>
+          <li>
+            <span class="item">Pizza(pref portuguesa)</span>
+            <span class="delete">delete</span>
+          </li>
+        </ul>
+      </div>
+      <!-- section 4 adding TABS -->
+      <div id="tab-wrapper">
+        <ul class="heading">
+          <li data-clicked='#joke' class="active">Food Joke</li>
+          <li data-clicked='#facts' class="active">Did you know</li>
+        </ul>
+        <div id="joke" class="panel">
+          <p>What do you call a fake noodle?</p>
+          <button id="showAnswer">Answer</button>
+          <p id="answer"></p>
+        </div>
+        <div id="facts" class="panel">
+          <p>This is what I learn about food this week </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor alias quas, ipsum, vero dignissimos veniam
+            adipisci sunt distinctio inventore beatae magni ducimus repellendus, iste esse placeat odit facere nam!
+            Aspernatur?</p>
+        </div>
+      </div>
+
+    </div>
+    <script src="app.js"></script>
+  </body>
+
+</html>
